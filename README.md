@@ -74,4 +74,7 @@ Finally, training the understanding module:
 python understanding.py
 ```
 In order to accelerate the training, you can execuete:
+```
+nohup accelerate launch --use_deepspeed --zero_stage [number of GPUs you wish to use] example.py > training_output_0107.log 2>&1 &
+```
 
